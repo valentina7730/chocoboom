@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+img.logotipo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+body{
+    background-color: #f5d7fa;
+}
+h1.titulo{
+    color: #6c4274;
+    text-align: center;
+    text-transform: uppercase;
+}
+main,footer {
+    max-width: 1250px;
+    margin: auto;
+}
+header{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+header > div {
+    flex-grow: 1;
+}
+
+button{ 
+    background-color: #f1c8f8;
+}
+
+
+section.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 10;
+    margin-top: 20px;
+}
+
+.subnav ul{
+    display: none;
+}
+.subnav:hover ul{
+    display: block;
+    list-style: none;
+}
+
+nav >ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+}
+div h2 {
+    margin: 0;
+    padding: 0%;
+    font-size: 25px;
+    font-family: cursive;
+    color: #DD00AF;
+    text-align: center;
+}
+
+
+.container{
+    height: 400px;
+    width: 1250px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows:  600px 600px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    
+    
+}
+
+
+
+
+
+
+    
