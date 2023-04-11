@@ -1,27 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0%;
 }
-img.logotipo{
+
+img.logotipo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
 
-body{
+body {
     background-color: #f5d7fa;
 }
-h1.titulo{
+
+h1.titulo {
     color: #6c4274;
     text-align: center;
     text-transform: uppercase;
 }
-main,footer {
+
+main,
+footer {
     max-width: 1250px;
     margin: auto;
 }
-header{
+
+header {
     padding: 5px 10px;
     display: flex;
     flex-direction: row;
@@ -29,42 +34,49 @@ header{
     max-width: 1250px;
     margin: auto;
 }
-header > div {
+
+header>div {
     flex-grow: 1;
 }
 
-button{ 
+button {
     background-color: #f1c8f8;
 }
 
+.navbar-toggler {
+    z-index: 2;
+}
 
-section.banner{
+section.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     flex-grow: 10;
     margin-top: 20px;
 }
 
-.subnav ul{
+.subnav ul {
     display: none;
 }
-.subnav:hover ul{
+
+.subnav:hover ul {
     display: block;
     list-style: none;
 }
 
-nav >ul{
+nav>ul {
     display: flex;
     flex-direction: row;
     width: 100%;
     list-style: none;
     justify-content: space-evenly;
 }
+
 div h2 {
     margin: 0;
     padding: 0%;
@@ -75,21 +87,44 @@ div h2 {
 }
 
 
-.container{
+.container {
     height: 400px;
     width: 1250px;
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows:  600px 600px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(600px, auto);
     grid-row-gap: 15px;
     grid-column-gap: 15px;
-    
-    
 }
 
+.card-body a {
+    color: black;
+    background-color: #B0EAF6;
+    border-color: #B0EAF6;
+}
 
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(600px, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        text-align: center;
+    }
 
+    .container .card img {
+        max-height: 200px;
+        max-width: 500px;
+        margin: auto;
+    }
+}
 
+@media (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-
-    
+}
